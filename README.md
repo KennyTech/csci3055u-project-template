@@ -26,13 +26,19 @@
 
 > **Scala - No distinction from statements and expressions**
 
-*A comparison to Java*
+*A comparison to Java:*
 
-```clojure
-(let [x 10
-      y 20]
-  (+ x y))
+Java snippet to add 1 if positive, subtract if negative:
+```java
+int num = x >= 0 ? x + 1 : x - 1;
 ```
+
+Scala snippet:
+```scala
+val num = if (x >= 0) x + 1 else x - 1
+```
+
+Note the type inference, Scala can just declare a val. Also note Java must use statements, Scala can use purely expressions.
 
 ## About the tools
 
