@@ -12,16 +12,21 @@
 > - Scala is an "object functional" programming language.
 > - Scala combines functional programming with object orientated programming that is capable of operating with the Java infrastructure.
 > - Syntactic flexibility (ie. foo.toString = foo.toString(), semi-colons are unnecessary to end lines)
-> - Type inference (ie. Compiler will deduce type when unspecified)
 > - Unified type system (ie. Unlike Java where there are strict distinction, any types, like *Int* and *Boolean* both inherit from the *Any* class)
->
->
+> - Type inference (ie. Compiler will deduce type when unspecified) (functional programming)
+> - No distinction from statements and expressions (functional programming)
+> - Anonymous functions (functional programming) 
+> - Higher-order functions (functional programming)
+> - Lazy evaluation (functional programming)
+> - Nested functions (functional programming)
+> - Pattern matching (functional programming)
+> - Tuples (functional programming)
 
 ## About the syntax
 
-> _give some code snippet of the language_
+> **Scala - No distinction from statements and expressions**
 
-*Let form*
+*A comparison to Java*
 
 ```clojure
 (let [x 10
