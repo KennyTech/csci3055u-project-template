@@ -39,6 +39,21 @@ val num = if (x >= 0) x + 1 else x - 1
 ```
 
 Note the type inference, Scala can just declare a val. Also note Java must use statements, Scala can use purely expressions.
+However, certain types still need to be declared (ie. function parameters).
+
+Scala snippet for recursive function to get factorial:
+```scala
+def getFactorial(x: Int): Int =
+  if (x == 0)
+    1
+  else
+    x*factorial(x - 1)
+```
+
+Note the function parameter having a declaration type (int).
+Also note (if x == 0) 1, this is an inferred return type thanks to Scala's syntactic flexibility. 
+
+
 
 ## About the tools
 
