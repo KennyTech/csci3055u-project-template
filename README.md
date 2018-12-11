@@ -10,7 +10,8 @@
 > 
 > - Some interesting features
 > It is an "object functional" programming language.
-> Scala combined functioning programming with object orientated programming that is also capable of operating with Java and JS.
+> Scala combines functional programming with object orientated programming that is also capable of operating with Java and JS.
+>
 >
 
 ## About the syntax
