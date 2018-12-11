@@ -1,11 +1,11 @@
 # _Your project title_
 
-- _your name_
-- _your email (uoit.net)_
+- Kenny Le
+- kenny.le@uoit.net
 
 ## About the language
 
-> _Describe the language_
+> Scala - History
 >
 > - History
 > - Some interesting features
