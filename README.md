@@ -1,14 +1,17 @@
-# _Your project title_
+# Scala
 
 - Kenny Le
 - kenny.le@uoit.net
 
 ## About the language
 
-> Scala - History
->
 > - History
+>
+> 
 > - Some interesting features
+> It is an "object functional" programming language.
+> Scala combined functioning programming with object orientated programming that is also capable of operating with Java and JS.
+>
 
 ## About the syntax
 
