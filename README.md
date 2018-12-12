@@ -137,8 +137,42 @@ println(something);
 
 ## About open source library
 
-> _Describe at least one contribution by the open source
-community written in the language._
+> **Scalacaster**
+> An open-sourced Scala library that uses classic algorithms and data structures. 
+> This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
+> What makes this library different?
+> It's all purely functioning programming.
+
+For example, let us cover a snippet of the Merge Sort algorithm in functional programming using Scala:
+```scala
+  def halfify(as: List[A]): (List[A], List[A]) = {
+    def loop(bs: List[A], fs: List[A], ss: List[A]): (List[A], List[A]) = bs match {
+      case f :: s :: r => loop(r, f :: fs, s :: ss)
+      case f :: Nil => (f :: fs, ss)
+      case Nil => (fs, ss)
+    }
+
+    loop(as, Nil, Nil)
+  }
+```
+What this does, is it takes first two elements of in the list, appends them to two separate lists, and loop so that all odd nodes and all even nodes are split to two different lists. This is one of the initial steps of merge sort, which is a divide and conquer search algorithm, requiring a list to be split into two parts, left and right side.
+
+As comparison, a simple Java implementation:
+```java
+int mid = n / 2;
+    int[] l = new int[mid];
+    int[] r = new int[n - mid];
+ 
+    for (int i = 0; i < mid; i++) {
+        l[i] = a[i];
+    }
+    for (int i = mid; i < n; i++) {
+        r[i - mid] = a[i];
+    }
+```
+The Java implementation takes a slightly different approach, but requires a count on n (the number of nodes), which requires O(n) time complexity to determine.
+Although Java appears more sensible, the Scala implementation (albeit slightly different), is easier to reason out.
+The Java implementation describes "how to get it" whereas a functional implementation using Scala describes "what you want".
 
 # Analysis of the language
 
