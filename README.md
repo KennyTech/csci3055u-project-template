@@ -107,26 +107,32 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 
 ## Compiler Options
 
-> Although you can use the command console or terminal to compile and run Scala as aforementioned, most modern Scala developers use a combination of: sbt and an IDE (integrated development environment). 
-> For example, in Java, many people use IntelliJ IDEA or Eclipse Oxygen. 
-> Scala sbt is an open-sourced build-tool like Java's Maven or Ant.
-> For IDE choicse, for both windows and linux, IntelliJ IDEA using Scala plug-in is a possibility, among many other IDE choices.
-> Benefits include ease of use and navigation, as well as syntax check or intelligent syntax completion. 
-> It is very easy to set up, as the environment downloads and installs the Scala SDK for you. 
-> The only requirement is to have the Java SDK.
+Although you can use the command console or terminal to compile and run Scala as aforementioned, most modern Scala developers use a combination of: sbt and an IDE (integrated development environment). 
+
+For example, in Java, many people use IntelliJ IDEA or Eclipse Oxygen. 
+
+Scala sbt is an open-sourced build-tool like Java's Maven or Ant.
+
+For IDE choicse, for both windows and linux, IntelliJ IDEA using Scala plug-in is a possibility, among many other IDE choices.
+
+Benefits include ease of use and navigation, as well as syntax check or intelligent syntax completion. 
+
+It is very easy to set up, as the environment downloads and installs the Scala SDK for you. 
+
+The only requirement is to have the Java SDK.
 
 
 ## About the standard library
 
-### Functions 
-scala.collection
+### List of notable functions 
+
 - scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
 - scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
-scala.concurrent - This library includes primitives for concurrent programming (that is, multiple computations during an overlapping time period)
-scala.io - One of the difficulties of most functional programming languages is implementing Input/Output operations, however Scala has a library for this
-scala.math - Math functions
-scala.sys - Functions for operating system and processes
-scala.util.matching - Regular expressions (regex), and in Scala this can even be used to match arbitrary data types
+- scala.concurrent - This library includes primitives for concurrent programming (that is, multiple computations during an overlapping time period)
+- scala.io - One of the difficulties of most functional programming languages is implementing Input/Output operations, however Scala has a library for this
+- scala.math - Math functions
+- scala.sys - Functions for operating system and processes
+- scala.util.matching - Regular expressions (regex), and in Scala this can even be used to match arbitrary data types
 
 #### Standard library scala matching function example:
 ```scala
