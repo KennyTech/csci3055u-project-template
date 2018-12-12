@@ -5,13 +5,15 @@
 
 ## About the language
 
-> **History**
-> - Scala was written by Martin Odersky in 2004 after his experience with working with the Java team and being unsatisfied with the contraints of Java. Odersky wanted a language that was a midway from a language that is as pragmatic as Java, and a language that is a pure functional academic language. At the time he worked on FUNNEL, a functional programming language that yields general programming notation, based on join-calculus theory (concurrent processes, global lexical scoping, static type-checking, and so on).
-> 
-> **Some interesting features**
-> - Scala is an "object functional" programming language.
-> - Scala combines functional programming with object orientated programming that is capable of operating with the Java infrastructure.
-> - Syntactic flexibility (ie. foo.toString = foo.toString(), semi-colons are unnecessary to end lines)
+# History
+
+Scala was written by Martin Odersky in 2004 after his experience with working with the Java team and being unsatisfied with the contraints of Java. Odersky wanted a language that was a midway from a language that is as pragmatic as Java, and a language that is a pure functional academic language. At the time he worked on FUNNEL, a functional programming language that yields general programming notation, based on join-calculus theory (concurrent processes, global lexical scoping, static type-checking, and so on).
+
+
+# Interesting Features
+- Scala is an "object functional" programming language.
+- Scala combines functional programming with object orientated programming that is capable of operating with the Java infrastructure.
+- Syntactic flexibility (ie. foo.toString = foo.toString(), semi-colons are unnecessary to end lines)
 > - Unified type system (ie. Unlike Java where there are strict distinction, any types, like *Int* and *Boolean* both inherit from the *Any* class)
 > - Type inference (ie. Compiler will deduce type when unspecified) (functional programming)
 > - No distinction from statements and expressions (functional programming)
@@ -21,6 +23,7 @@
 > - Nested functions (functional programming)
 > - Pattern matching (functional programming)
 > - Tuples (functional programming)
+
 
 ## About the syntax
 
@@ -108,7 +111,7 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 
 ## About the standard library
 
-**Functions**
+# Functions 
 > scala.collection
 > - scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
 > - scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
@@ -132,7 +135,7 @@ println(something);
 
 > res3: java.lang.String = It's a Car
 
-**Data Structures**
+# Data Structures 
 >
 
 ## About open source library
@@ -142,11 +145,8 @@ println(something);
 https://github.com/vkostyukov/scalacaster
 
 > An open-sourced Scala library that uses classic algorithms and data structures. 
-
 > This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
-
 > What makes this library different?
-
 > It's all purely functioning programming.
 
 For example, let us cover a snippet of the Merge Sort algorithm in functional programming using Scala:
@@ -161,7 +161,7 @@ For example, let us cover a snippet of the Merge Sort algorithm in functional pr
     loop(as, Nil, Nil)
   }
 ```
-What this does, is it takes first two elements of in the list, appends them to two separate lists, and loop so that all odd nodes and all even nodes are split to two different lists. This is one of the initial steps of merge sort, which is a divide and conquer search algorithm, requiring a list to be split into two parts, left and right side.
+What this does, is it takes the first two elements in the list, appends them to two separate lists, and recursively loop so that all odd nodes and all even nodes are split to two different lists. This is one of the initial steps of merge sort, which is a divide and conquer search algorithm, requiring a list to be split into two parts, left and right side. Runs in O(n) time.
 
 As comparison, a simple Java implementation:
 ```java
