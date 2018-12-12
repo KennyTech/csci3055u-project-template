@@ -253,6 +253,16 @@ The Java implementation describes "how to get it" whereas a functional implement
 
 
 2. 
+> Scala can perform meta-programming such as macros, using *def macros* and macro bundles feature.
+
+For example, you could write a macro for assert:
+```scala
+def assert(cond: Boolean, msg: Any) = macro Asserts.assertImpl
+```
+So that you can call assert:
+```scala
+assert(x < 100, "x too large, input lower value")
+```
 
 3.
 
