@@ -248,7 +248,21 @@ The Java implementation describes "how to get it" whereas a functional implement
 
 # Analysis of the language
 
-> _Organize your report according to the project description
-document_.
+1. 
+> Scala supports both functional and procedural (object-oriented) programming, by combining functional programming with the base of what Java was built on, as it was written by one of the founding Java developers. 
+
+
+2. 
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
 
 
