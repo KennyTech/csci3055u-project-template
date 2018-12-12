@@ -31,6 +31,7 @@
 Java snippet to add 1 if positive, subtract if negative:
 ```java
 int num = x >= 0 ? x + 1 : x - 1;
+
 ```
 
 Scala snippet:
@@ -47,17 +48,46 @@ def getFactorial(x: Int): Int =
   if (x == 0)
     1
   else
-    x*factorial(x - 1)
+    x*getFactorial(x - 1)
 ```
 
 Note the function parameter having a declaration type (int).
 Also note (if x == 0) 1, this is an inferred return type thanks to Scala's syntactic flexibility. 
 
 
-
 ## About the tools
 
-> _Describe the compiler or interpreter needed_.
+> Scala uses the compiler *scalac*, much like Java to *javac*. It functions just like Java.
+> For example, to compile a file from command line: 
+```
+$ scalac HelloWorld.scala
+```
+> And then to run it:
+```
+$ HelloWorld
+```
+
+> Scala uses the Scala REPL as an interpreter.
+> The Scala REPL can take expressions and interprets the result of evaluating the expressions.
+> To use this, we use type *scala* in a terminal or command console.
+> Then we can use *scala> expression* to evaluate an expression.
+
+```scala
+scala 
+```
+
+```scala
+scala> 1+1 
+```
+> res0: Int = 2
+
+```scala
+scala> "what" + "ever" 
+```
+> res1: java.lang.String = whatever
+
+> As we can see, Scala can also use the java libraries, such as String, to concatenate 2 inferred strings.
+
 
 ## About the standard library
 
