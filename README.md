@@ -281,8 +281,6 @@ assert(x < 100, "x too large, input lower value")
 
 > // /* */   comment
 
-> #          type
-
 > :          type ascription or context bounds
 
 > <: >:      upper and lower bounds
@@ -324,12 +322,18 @@ True closures can also be shown using anonymous functions.
 
 
 ## 5. Funtional Programming Constructs
-> Type inference  Compiler will deduce type when unspecified  
-> No distinction from statements and expressions  for example: val num = if (x >= 0) x + 1 else x - 1  
-> Anonymous functions  ie. list map { x => sqrt(x) } can be list map sqrt // (no longer bound to an identifier)    
-> Lazy evaluation  any collection of data can be made non-strict  
-> Nested functions  allows nesting and multiple nested functions  
-> Pattern matching  in-depth implementations for pattern matching, ie. using cases (or alternatively, wildcards _)
+> Type inference - Compiler will deduce type when unspecified  
+
+> No distinction from statements and expressions - for example: val num = if (x >= 0) x + 1 else x - 1  
+
+> Anonymous functions - ie. list map { x => sqrt(x) } can be list map sqrt // (no longer bound to an identifier)    
+
+> Lazy evaluation - any collection of data can be made non-strict  
+
+> Nested functions - allows nesting and multiple nested functions  
+
+> Pattern matching - in-depth implementations for pattern matching, ie. using cases (or alternatively, wildcards _)
+
 ```scala
 var something = "It's a";
 
