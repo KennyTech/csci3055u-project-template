@@ -259,6 +259,7 @@ For example, you could write a macro for assert:
 ```scala
 def assert(cond: Boolean, msg: Any) = macro Asserts.assertImpl
 ```
+
 So that you can call assert:
 ```scala
 assert(x < 100, "x too large, input lower value")
@@ -268,24 +269,53 @@ assert(x < 100, "x too large, input lower value")
 Symbol resolution:
 
 > <-       for-comprehensions, separates pattern from generator
+
 > =>       function types or literals
+
 > ( )        delimit expressions and parameters
+
 > [ ]        delimit type parameters
+
 > { }        delimit blocks
+
 > .          method call
+
 > // /* */   comment
+
 > #          type
+
 > :          type ascription or context bounds
+
 > <: >:      upper and lower bounds
+
 > " """      strings
+
 > '          symbols and characters
+
 > @          annotations, variable binding for pattern matching
+
 > ,          parameter separator
+
 > ;          statement separator
+
 > _          wildcard or other meaning
 
+Support for closure: Yes
+
+```scala
+object TestClosure extends App {
+  override def main(args: Array[String]) {
+    println( "num(1) value = " +  num(1) )
+    println( "num(2) value = " +  num(2) )
+  }
+  var factor = 2
+  val num = (i:Int) => i * factor
+}
+```
+Shows an example that Scala supports closure such that i and num can be accessed.
 
 4.
+
 
 
 5.
