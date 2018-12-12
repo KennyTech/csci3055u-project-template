@@ -7,7 +7,11 @@
 
 ### History
 
-Scala was written by Martin Odersky in 2004 after his experience with working with the Java team and being unsatisfied with the contraints of Java. Odersky wanted a language that was a midway from a language that is as pragmatic as Java, and a language that is a pure functional academic language. At the time he worked on FUNNEL, a functional programming language that yields general programming notation, based on join-calculus theory (concurrent processes, global lexical scoping, static type-checking, and so on).
+Scala was written by Martin Odersky in 2004 after his experience with working with the Java team and being unsatisfied with the contraints of Java. 
+
+Odersky wanted a language that was a midway from a language that is as pragmatic as Java, and a language that is a pure functional academic language. 
+
+At the time he worked on FUNNEL, a functional programming language that yields general programming notation, based on join-calculus theory (concurrent processes, global lexical scoping, static type-checking, and so on).
 
 
 ### Interesting Features
@@ -49,7 +53,10 @@ Scala snippet:
 val num = if (x >= 0) x + 1 else x - 1
 ```
 
-Note the type inference, Scala can just declare a val. Also note Java must use statements, Scala can use purely expressions.
+Note the type inference, Scala can just declare a val. 
+
+Also note Java must use statements, Scala can use purely expressions.
+
 However, certain types still need to be declared (ie. function parameters).
 
 Scala snippet for recursive function to get factorial:
@@ -62,24 +69,29 @@ def getFactorial(x: Int): Int =
 ```
 
 Note the function parameter having a declaration type (int).
+
 Also note (if x == 0) 1, returns 1, this is an inferred return type thanks to Scala's syntactic flexibility. 
 
 
 ## About the tools
 
 Scala uses the compiler *scalac*, much like Java to *javac*. It functions just like Java.
+
 For example, to compile a file from command line: 
 ```
 $ scalac HelloWorld.scala
 ```
 > And then to run it:
 ```
-$ HelloWorld
+$ scala HelloWorld
 ```
 
 Scala uses the Scala REPL as an interpreter.
+
 The Scala REPL can take expressions and interprets the result of evaluating the expressions.
+
 To use this, we use type *scala* in a terminal or command console.
+
 Then we can use *scala> expression* to evaluate an expression.
 
 ```scala
@@ -149,7 +161,27 @@ println(something);
 > res3: java.lang.String = It's a Car
 
 ### Data Structures 
->
+
+As mentioned, Scala is a language that incorporates the best of both worlds, functional and object-oriented programming.
+
+This means Scala can do many powerful things with data structures.
+
+For example, you want to populate a vector with even numbers from 1 to 50, but only if its squared product is greater than 100:
+
+```Scala
+val s = for (x <- 1 to 25 if x*x > 100) yield 2*x
+```
+
+> res4: Vector(22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50)
+
+Now to implement in Java, it is much more tedious:
+
+```Java
+int[] t = new int[25];
+for (i = 0; i < t.length; i++) {
+    t[i] = 2 * i;
+}
+```
 
 ## About open source library
 
