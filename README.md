@@ -88,11 +88,21 @@ scala> "what" + "ever"
 
 > As we can see, Scala can also use the java libraries, such as String, to concatenate 2 inferred strings.
 
+```scala
+scala> List(0, 1, 2, 3).map(x => x * 2)
+```
+> res2: List[Int] = List(0, 2, 4, 6)
+
+> This shows that you can use expressions in Scala anywhere, much like functional programming, for example, to map a list to even values.
+> 
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
+**Functions**
+>
+
+**Data Structures**
+>
 
 ## About open source library
 
