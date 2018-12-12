@@ -142,8 +142,11 @@ println(something);
 https://github.com/vkostyukov/scalacaster
 
 > An open-sourced Scala library that uses classic algorithms and data structures. 
+
 > This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
+
 > What makes this library different?
+
 > It's all purely functioning programming.
 
 For example, let us cover a snippet of the Merge Sort algorithm in functional programming using Scala:
