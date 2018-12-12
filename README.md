@@ -248,11 +248,11 @@ The Java implementation describes "how to get it" whereas a functional implement
 
 # Analysis of the language
 
-1. 
+## 1. Functional vs Procedural 
 > Scala supports both functional and procedural (object-oriented) programming, by combining functional programming with the base of what Java was built on, as it was written by one of the founding Java developers. 
 
 
-2. 
+## 2. Meta-Programming (macros)
 > Scala can perform meta-programming such as macros, using *def macros* and macro bundles feature.
 
 For example, you could write a macro for assert:
@@ -265,8 +265,7 @@ So that you can call assert:
 assert(x < 100, "x too large, input lower value")
 ```
 
-3.
-Symbol resolution:
+## 3. Symbol resolution:
 
 > <-       for-comprehensions, separates pattern from generator
 
@@ -314,18 +313,46 @@ object TestClosure extends App {
 ```
 Shows an example that Scala supports closure such that i and num can be accessed.
 
-4.
+True closures can also be shown using anonymous functions.
+
+## 4. Scoping (Lexical vs. Dynamic)
+
+> Scala can perform lexical scoping (if a variable is within a function, then it is defined only in that function).
+
+> Scala can also perform dynamic scoping, where the name resolution depends on the program's state, such as with macros.
 
 
 
-5.
+## 5. Funtional Programming Constructs
+> Type inference  Compiler will deduce type when unspecified
+> No distinction from statements and expressions  for example: val num = if (x >= 0) x + 1 else x - 1
+> Anonymous functions  ie. list map { x => sqrt(x) } can be list map sqrt // (no longer bound to an identifier)    
+> Lazy evaluation  any collection of data can be made non-strict
+> Nested functions  allows nesting and multiple nested functions
+> Pattern matching   
+> Tuples 
 
 
-6.
+## 6. Type System (Static vs Dynamic)
+> Scala uses a static type system that includes: 
+
+> Classes and abstract types as object members, Structural types, Path-dependent types, Compound types, Explicitly typed self references, Generic classes, Polymorphic methods, Upper and lower type bounds, and Variance
+
+As a bonus, declaring the type is also optional in most cases in Scala (except in function parameters, etc), since Scala uses inferred typing.
 
 
-7.
+## 7. Strengths and Weaknesses
 
+### Strengths
+> Scala is a very powerful and robust programming language that will allow a coder to get the program to do what they want. Some tasks are better handled using functional programming, while some tasks are better handled with object-oriented programming. Scala allows the developer to maximize speed and efficiency by implementing both functional and procedural methods.
 
+> Scala has a flexible syntax
 
+> Scala has type inference and a type system
 
+### Weaknesses
+> It is a complex language, learning it will take longer than most other languages.
+
+> While it is nice to be able to code things in a few lines that would have taken dozens more otherwise, when building large systems it is easy to get lost in the code and you start to wonder "Wait what does this part of the code do again?"
+
+> There is not as much documentation as other languages like Java.
