@@ -5,29 +5,29 @@
 
 ## About the language
 
-# History
+### History
 
 Scala was written by Martin Odersky in 2004 after his experience with working with the Java team and being unsatisfied with the contraints of Java. Odersky wanted a language that was a midway from a language that is as pragmatic as Java, and a language that is a pure functional academic language. At the time he worked on FUNNEL, a functional programming language that yields general programming notation, based on join-calculus theory (concurrent processes, global lexical scoping, static type-checking, and so on).
 
 
-# Interesting Features
+### Interesting Features
 - Scala is an "object functional" programming language.
 - Scala combines functional programming with object orientated programming that is capable of operating with the Java infrastructure.
 - Syntactic flexibility (ie. foo.toString = foo.toString(), semi-colons are unnecessary to end lines)
-> - Unified type system (ie. Unlike Java where there are strict distinction, any types, like *Int* and *Boolean* both inherit from the *Any* class)
-> - Type inference (ie. Compiler will deduce type when unspecified) (functional programming)
-> - No distinction from statements and expressions (functional programming)
-> - Anonymous functions (functional programming) 
-> - Higher-order functions (functional programming)
-> - Lazy evaluation (functional programming)
-> - Nested functions (functional programming)
-> - Pattern matching (functional programming)
-> - Tuples (functional programming)
+- Unified type system (ie. Unlike Java where there are strict distinction, any types, like *Int* and *Boolean* both inherit from the *Any* class)
+- Type inference (ie. Compiler will deduce type when unspecified) (functional programming)
+- No distinction from statements and expressions (functional programming)
+- Anonymous functions (functional programming) 
+- Higher-order functions (functional programming)
+- Lazy evaluation (functional programming)
+- Nested functions (functional programming)
+- Pattern matching (functional programming)
+- Tuples (functional programming)
 
 
 ## About the syntax
 
-> **Scala - No distinction from statements and expressions**
+### Scala - No distinction from statements and expressions
 
 *A comparison to Java:*
 
@@ -98,7 +98,7 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 
 > This shows that you can use expressions in Scala anywhere, much like functional programming, for example, to map a list to even values.
 
-**Compiler Options**
+## Compiler Options
 
 > Although you can use the command console or terminal to compile and run Scala as aforementioned, most modern Scala developers use a combination of: sbt and an IDE (integrated development environment). 
 > For example, in Java, many people use IntelliJ IDEA or Eclipse Oxygen. 
@@ -111,7 +111,7 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 
 ## About the standard library
 
-# Functions 
+### Functions 
 > scala.collection
 > - scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
 > - scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
@@ -135,12 +135,12 @@ println(something);
 
 > res3: java.lang.String = It's a Car
 
-# Data Structures 
+### Data Structures 
 >
 
 ## About open source library
 
-**Scalacaster**
+### Scalacaster
 
 https://github.com/vkostyukov/scalacaster
 
