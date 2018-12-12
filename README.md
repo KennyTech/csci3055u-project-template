@@ -94,12 +94,43 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 > res2: List[Int] = List(0, 2, 4, 6)
 
 > This shows that you can use expressions in Scala anywhere, much like functional programming, for example, to map a list to even values.
-> 
+
+**Compiler Options**
+
+> Although you can use the command console or terminal to compile and run Scala as aforementioned, most modern Scala developers use a combination of: sbt and an IDE (integrated development environment). 
+> For example, in Java, many people use IntelliJ IDEA or Eclipse Oxygen. 
+> Scala sbt is an open-sourced build-tool like Java's Maven or Ant.
+> For IDE choicse, for both windows and linux, IntelliJ IDEA using Scala plug-in is a possibility, among many other IDE choices.
+> Benefits include ease of use and navigation, as well as syntax check or intelligent syntax completion. 
+> It is very easy to set up, as the environment downloads and installs the Scala SDK for you. 
+> The only requirement is to have the Java SDK.
+
 
 ## About the standard library
 
 **Functions**
->
+> scala.collection
+> - scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
+> - scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
+> scala.concurrent - This library includes primitives for concurrent programming (that is, multiple computations during an overlapping time period)
+> scala.io - One of the difficulties of most functional programming languages is implementing Input/Output operations, however Scala has a library for this
+> scala.math - Math functions
+> scala.sys - Functions for operating system and processes
+> scala.util.matching - Regular expressions (regex), and in Scala this can even be used to match arbitrary data types
+
+Scala matching function example:
+```scala
+var something = "It's a";
+
+var myResult =
+    something match {
+       case "It's a" => something + " Car";
+       case "It's not a" => something + " Dog";
+    }
+println(something);
+```
+
+> res3: java.lang.String = It's a Car
 
 **Data Structures**
 >
