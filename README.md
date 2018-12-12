@@ -62,7 +62,7 @@ def getFactorial(x: Int): Int =
 ```
 
 Note the function parameter having a declaration type (int).
-Also note (if x == 0) 1, this is an inferred return type thanks to Scala's syntactic flexibility. 
+Also note (if x == 0) 1, returns 1, this is an inferred return type thanks to Scala's syntactic flexibility. 
 
 
 ## About the tools
@@ -119,16 +119,16 @@ scala> List(0, 1, 2, 3).map(x => x * 2)
 ## About the standard library
 
 ### Functions 
-> scala.collection
-> - scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
-> - scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
-> scala.concurrent - This library includes primitives for concurrent programming (that is, multiple computations during an overlapping time period)
-> scala.io - One of the difficulties of most functional programming languages is implementing Input/Output operations, however Scala has a library for this
-> scala.math - Math functions
-> scala.sys - Functions for operating system and processes
-> scala.util.matching - Regular expressions (regex), and in Scala this can even be used to match arbitrary data types
+scala.collection
+- scala.collection.immutable - Scala has functional tendencies, which includes doing immutable objects and variables (may sometimes include Vector, List, HashMap)
+- scala.collection.mutable - Mutable objects and variables (can include ArrayBuffer, StringBuilder, HashMap)
+scala.concurrent - This library includes primitives for concurrent programming (that is, multiple computations during an overlapping time period)
+scala.io - One of the difficulties of most functional programming languages is implementing Input/Output operations, however Scala has a library for this
+scala.math - Math functions
+scala.sys - Functions for operating system and processes
+scala.util.matching - Regular expressions (regex), and in Scala this can even be used to match arbitrary data types
 
-Scala matching function example:
+#### Standard library scala matching function example:
 ```scala
 var something = "It's a";
 
