@@ -178,21 +178,42 @@ Now to implement in Java, it is much more tedious:
 
 ```Java
 int[] t = new int[25];
+int count = 0;
 for (i = 0; i < t.length; i++) {
-    t[i] = 2 * i;
+    if (x*x > 100) {    
+        t[count] = 2 * i;
+        count++;
 }
 ```
 
+Scala can also use basic data structures including: arrays (mutable), lists (immutable), sets, tuples.
+
+Some advanced functional data structures include: maps, foreach, filter, zip, partition, find, flatMap, etc. 
+
+For example, let's partition odd and even numbers in a list in Scala:
+```Scala
+val numbers = List(1, 2, 3, 4)
+numbers.partition(_ % 2 == 0)
+```
+res5: (List[Int], List[Int]) = (List(2, 4),List(1, 3))
+
+It's simple, powerful, and easy.
+
 ## About open source library
+
+An interesting open source library that uses Scala is Scalacaster.
 
 ### Scalacaster
 
 https://github.com/vkostyukov/scalacaster
 
-> An open-sourced Scala library that uses classic algorithms and data structures. 
-> This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
-> What makes this library different?
-> It's all purely functioning programming.
+An open-sourced Scala library that uses classic algorithms and data structures. 
+
+This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
+
+What makes this library different?
+
+It's fully written in pure functional programming.
 
 For example, let us cover a snippet of the Merge Sort algorithm in functional programming using Scala:
 ```scala
