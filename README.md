@@ -34,7 +34,14 @@ Scala was written by Martin Odersky in 2004 after his experience with working wi
 Java snippet to add 1 if positive, subtract if negative:
 ```java
 int num = x >= 0 ? x + 1 : x - 1;
-
+```
+or
+```java
+int num = 1;
+if (x >= 0)
+    x++;
+else
+    x--; 
 ```
 
 Scala snippet:
