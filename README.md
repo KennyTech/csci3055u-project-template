@@ -137,7 +137,10 @@ println(something);
 
 ## About open source library
 
-> **Scalacaster**
+**Scalacaster**
+
+https://github.com/vkostyukov/scalacaster
+
 > An open-sourced Scala library that uses classic algorithms and data structures. 
 > This allows for Lists, Queues, Stacks, Sets, Heaps, Trees, Graphs, Sorting Algorithms, and Searching Algorithms.
 > What makes this library different?
