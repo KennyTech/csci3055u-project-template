@@ -265,14 +265,37 @@ assert(x < 100, "x too large, input lower value")
 ```
 
 3.
+Symbol resolution:
+
+> <-       for-comprehensions, separates pattern from generator
+> =>       function types or literals
+> ( )        delimit expressions and parameters
+> [ ]        delimit type parameters
+> { }        delimit blocks
+> .          method call
+> // /* */   comment
+> #          type
+> :          type ascription or context bounds
+> <: >:      upper and lower bounds
+> " """      strings
+> '          symbols and characters
+> @          annotations, variable binding for pattern matching
+> ,          parameter separator
+> ;          statement separator
+> _          wildcard or other meaning
+
 
 4.
 
+
 5.
+
 
 6.
 
+
 7.
+
 
 
 
